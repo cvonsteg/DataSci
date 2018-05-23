@@ -17,4 +17,7 @@ class Dataset:
 
     def Desc(self):
         print(self.df.describe())
-        
+
+    def LowCols(self):
+        self.df.columns = self.df.columns.str.lower()
+
