@@ -21,3 +21,9 @@ class Dataset:
     def LowCols(self):
         self.df.columns = self.df.columns.str.lower()
 
+    def index_checker(self, col):
+        if self.df.groupby(col)[col].count().is_unique:
+            self.df.set_index(col, inplace=True)
+        else:
+            print('Cannot change index - values in column are not unique')
+
