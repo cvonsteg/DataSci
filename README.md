@@ -8,4 +8,4 @@ Tools to help with Data Science related projects
 
 * dfFuns: Same functionality as dfClass, except written as a function.  The function executes all of the attributes of the dfClass in one go.
 
-* iter_tools: https://docs.python.org/3.7/library/itertools.html#itertools.islice
+* iter_tooling: https://docs.python.org/3.7/library/itertools.html#itertools.islice
